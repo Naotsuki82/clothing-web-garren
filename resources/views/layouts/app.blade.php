@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple the Brand - Laravel</title>
+    <!-- Updated Title -->
+    <title>Fashion & Co.</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome CDN (Added this line) -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Link to our Custom CSS -->
@@ -18,35 +19,28 @@
 </head>
 <body>
 
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        Black Week is Live - Up to 60% Off
-    </div>
-
     <!-- Header -->
     <header id="main-header">
         <nav class="nav-container">
-            <!-- Mobile Menu Icon -->
-            <div class="menu-icon">
+            <!-- Mobile Menu Icon with Click Event -->
+            <div class="menu-icon" onclick="toggleMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
             
-            <a href="{{ route('home') }}" class="logo">Simple Brand</a>
+            <!-- Logo -->
+            <a href="{{ route('home') }}" class="logo">Fashion & Co.</a>
 
-            <ul class="nav-links">
+            <!-- Navigation Links (Added ID for JS targeting) -->
+            <ul class="nav-links" id="navLinks">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('hydrocarbon') }}">Hydrocarbon</a></li>
-                <li><a href="{{ route('shop') }}">Shop</a></li> <!-- Updated Link -->
+                <li><a href="{{ route('shop') }}">Shop</a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
             </ul>
 
             <div class="icons">
-                <!-- Search Icon (Your request) -->
                 <i class="fa-solid fa-magnifying-glass"></i>
-                
-                <!-- User Icon (Regular/Outline style for minimalism) -->
                 <i class="fa-regular fa-user"></i>
-                
-                <!-- Bag/Cart Icon -->
                 <i class="fa-solid fa-bag-shopping"></i>
             </div>
         </nav>
@@ -79,8 +73,6 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Mission</h4>
-                <p class="footer-text">Building a wardrobe for the fashion-conscious ambitious woman with timeless items.</p>
             </div>
             <div class="footer-col">
                 <h4>Newsletter</h4>
@@ -89,11 +81,13 @@
             </div>
         </div>
         <div class="copyright">
-            © {{ date('Y') }} Simple the Brand Laravel Clone.
+            © {{ date('Y') }} Fashion & Co. All rights reserved.
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
+        // Header Scroll Effect
         window.addEventListener('scroll', function() {
             const header = document.getElementById('main-header');
             if (window.scrollY > 50) {
@@ -102,6 +96,12 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        // Mobile Menu Toggle Function
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
