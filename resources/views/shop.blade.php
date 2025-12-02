@@ -49,11 +49,11 @@
 
             <!-- Price Filter -->
             <div class="filter-group">
-                <h3>Price</h3>
+                <h3>Price (IDR)</h3>
                 <div class="price-range">
-                    <input type="number" name="min_price" placeholder="From" value="{{ request('min_price') }}" style="width: 70px;">
+                    <input type="number" name="min_price" placeholder="Rp Min" value="{{ request('min_price') }}" style="width: 70px;">
                     <span>-</span>
-                    <input type="number" name="max_price" placeholder="To" value="{{ request('max_price') }}" style="width: 70px;">
+                    <input type="number" name="max_price" placeholder="Rp Max" value="{{ request('max_price') }}" style="width: 70px;">
                     <!-- Added Apply Button -->
                     <button type="submit" class="btn-apply-price" title="Apply Price Filter">&rarr;</button>
                 </div>
