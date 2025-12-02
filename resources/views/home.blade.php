@@ -10,18 +10,18 @@
         </div>
     </section>
 
-    <!-- Categories -->
+    <!-- Categories (Updated Images) -->
     <section class="categories">
         <div class="cat-card">
-            <img src="https://images.unsplash.com/photo-1548624149-f9cafd91a182?q=80&w=1000&auto=format&fit=crop" alt="Blazers">
+            <img src="https://images.unsplash.com/photo-1754974135100-b97cfeb8869a?q=80&w=415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blazers">
             <div class="cat-overlay">Blazers</div>
         </div>
         <div class="cat-card">
-            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000&auto=format&fit=crop" alt="Sweaters">
+            <img src="https://images.unsplash.com/photo-1610901157620-340856d0a50f?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sweaters">
             <div class="cat-overlay">Sweaters</div>
         </div>
         <div class="cat-card">
-            <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1000&auto=format&fit=crop" alt="Accessories">
+            <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accessories">
             <div class="cat-overlay">Accessories</div>
         </div>
     </section>
